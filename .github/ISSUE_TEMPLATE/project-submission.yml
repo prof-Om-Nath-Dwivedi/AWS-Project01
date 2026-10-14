@@ -1,0 +1,58 @@
+name: Project Submission
+description: Submit your project for the college event
+title: "[PROJECT] "
+labels: ["project-submission"]
+body:
+  - type: input
+    id: participant
+    attributes:
+      label: Participant Name
+      placeholder: Enter your full name
+    validations:
+      required: true
+
+  - type: input
+    id: team
+    attributes:
+      label: Team Name
+      placeholder: Enter your team name
+    validations:
+      required: true
+
+  - type: input
+    id: college
+    attributes:
+      label: College Name
+    validations:
+      required: true
+
+  - type: input
+    id: project
+    attributes:
+      label: Project Title
+    validations:
+      required: true
+
+  - type: input
+    id: github
+    attributes:
+      label: GitHub Repository URL
+      placeholder: https://github.com/username/project
+    validations:
+      required: true
+
+  - type: input
+    id: demo
+    attributes:
+      label: Live Demo URL
+      placeholder: https://example.com
+    validations:
+      required: false
+
+  - type: textarea
+    id: description
+    attributes:
+      label: Project Description
+      description: Explain your project and its features.
+    validations:
+      required: true
